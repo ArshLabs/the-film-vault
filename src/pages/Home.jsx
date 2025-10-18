@@ -7,7 +7,7 @@ import { useLoaderData } from "react-router-dom";
 
 export async function loader({ request }) {
     const url = new URL(request.url);
-    const searchTerm = url.searchParams.get("search") || "one piece";
+    const searchTerm = url.searchParams.get("search") || "chainsaw man";
 
     try {
         const movieSearchEndpoint = `https://www.omdbapi.com/?apikey=${apiKey}&s=${searchTerm}`;
